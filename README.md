@@ -11,7 +11,7 @@ This project allows users:
 - [Node.js](https://nodejs.org/en)
 - [Jest](https://jestjs.io/)
 
-##### Installation and Setup Instructions
+#### Installation and Setup Instructions
 You can run the below command to clone this project:
 ```
 git clone https://github.com/HilalKocak/LinkedList-TDD.git
