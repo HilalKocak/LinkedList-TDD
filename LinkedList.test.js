@@ -85,8 +85,8 @@ describe('#insertAtIndex', ()=> {
             const node = ll.getByIndex(2)
 
             expect(ll.length).toBe(5)
-            expect(ll.node.value).toBe(50)
-            expect(ll.node.next.value).toBe(30)
+            expect(node.value).toBe(50)
+            expect(node.next.value).toBe(30)
         })
     })
 })
