@@ -72,7 +72,7 @@ describe('#insertAtIndex', ()=> {
             ll.inserAtIndex(0, 30)
             expect(ll.length).toBe(3)
             expect(ll.head.value).toBe(30)
-            expect(ll.head.next.value).toBe(20)
+            expect(ll.head.next.value).toBe(10)
         })
         
     })
@@ -96,7 +96,7 @@ describe('#removeHead', () => {
         const ll = LinkedList.fromValues(10, 20, 30)
         ll.removeHead()
         expect(ll.head.value).toBe(20)
-        expect(ll.head.next).toBe(30)
+        expect(ll.head.next.value).toBe(30)
         expect(ll.length).toBe(2)
     })
 })

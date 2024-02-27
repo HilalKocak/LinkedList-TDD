@@ -20,12 +20,16 @@ class LinkedList{
         return current
     }
 
-    insertAtIndex(index, value){
+    inserAtIndex(index, value){
         if(index === 0) return this.insertAtHead(value)
         const prev = this.getByIndex(index-1)
         if (prev == null) return null
         prev.next = new LinkedListNode(value, prev.next)
         this.length++
+    }
+    removeHead() {
+        this.head = this.head.next
+        this.length--
     }
 // values = 10,20,20,40
 // 10 -> 20 -> 30 -> 40 -> null
