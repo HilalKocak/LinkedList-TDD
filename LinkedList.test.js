@@ -23,7 +23,7 @@ describe('getByIndex', ()=> {
     })
 })
 
-describe('with index greater than list legth', ()=> {
+describe('with index greater than list length', ()=> {
     test('it returns null', ()=> {
         const ll = new LinkedList.fromValues(10, 20)
         expect(ll.getByIndex(5)).toBeNull()

@@ -10,6 +10,27 @@ class LinkedList{
         this.head = newNode
         this.length ++
     }
+
+    getByIndex(index){
+        if (index < 0 || index >= this.length) return null
+        let current = this.head
+        for(let i = 0; i < index; i++){
+            current = current.next
+        }
+        return current
+    }
+// values = 10,20,20,40
+// 10 -> 20 -> 30 -> 40 -> null
+    print() {
+        let output = ''
+        let current = this.head
+        while(current) {
+            output = `${output}${current.value} -> `
+            current = current.next
+        }
+        console.log(`${output}null`)
+    }
+
 }
 class LinkedListNode{
     constructor(value, next){
@@ -26,5 +47,6 @@ LinkedList.fromValues = function(...values) {
     }
     return ll
 }
+
 
 module.exports = LinkedList
