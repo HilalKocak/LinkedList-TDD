@@ -31,6 +31,13 @@ class LinkedList{
         this.head = this.head.next
         this.length--
     }
+    removeAtIndex(index){
+        if(index === 0) return this.removeHead()
+        const prev = this.getByIndex(index-1)
+        if (prev == null) return null
+        prev.next = prev.next.next
+        this.length--
+    }
 // values = 10,20,20,40
 // 10 -> 20 -> 30 -> 40 -> null
     print() {
