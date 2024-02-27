@@ -20,7 +20,7 @@ class LinkedList{
         return current
     }
 
-    inserAtIndex(index, value){
+    insertAtIndex(index, value){
         if(index === 0) return this.insertAtHead(value)
         const prev = this.getByIndex(index-1)
         if (prev == null) return null
