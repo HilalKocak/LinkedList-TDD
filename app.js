@@ -7,3 +7,6 @@ ll.print()
 
 console.log(ll.getByIndex(2))
 console.log(ll.getByIndex(3).value)
+
+ll.insertAtIndex(2,60)
+ll.print() //10 -> 20 -> 60 -> 30 -> 40 -> null
