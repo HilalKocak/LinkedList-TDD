@@ -1,5 +1,15 @@
 ### Linked List Implementation Using Test Driven Development
-Linked list is more efficient considering memory and speed.
+Linked list provides the advantage of dynamic sizing, uses memory space more efficiently than an array, and performs adding or removing elements faster.
+
+This project allows users:
+- Add head to linked list
+- Insert node to desired index of linked list
+- Remove head of linked list
+- Remove node from desired index of linked list
+
+#### Technologies
+- [Node.js](https://nodejs.org/en)
+- [Jest](https://jestjs.io/)
 
 ##### Installation and Setup Instructions
 You can run the below command to clone this project:
