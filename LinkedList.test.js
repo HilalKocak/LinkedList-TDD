@@ -90,3 +90,13 @@ describe('#insertAtIndex', ()=> {
         })
     })
 })
+
+describe('#removeHead', () => {
+    test('removes head', ()=> {
+        const ll = LinkedList.fromValues(10, 20, 30)
+        ll.removeHead()
+        expect(ll.head.value).toBe(20)
+        expect(ll.head.next).toBe(30)
+        expect(ll.length).toBe(2)
+    })
+})
